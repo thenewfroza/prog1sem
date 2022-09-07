@@ -1,12 +1,20 @@
 #include <stdio.h>
-#define M_PI
 #include <math.h>
 int main()
 {
-	int a;
-	float b;
-	float b1;
-	b = (sin(4 * a) / (1 + cos(4 * a))) * (cos(2 * a) / (1 + cos(2 * a));
-	b1 = ctg(((3 / 2) * M_PI) - a);
-	return 0;
+    double pi = 3.1415926;
+    float a;
+    float z1;
+    float z2;
+    float alpha;
+    float s1;
+    printf("print your radian");
+    scanf("%f",&a);
+    alpha = (a*(pi/180)); //перевожу радианы в градусы
+    s1=(tan((1.5 * pi) - alpha)); // разделил задачу т.к. не верно работало в одной строке
+    z1 = (sin(4 * alpha) / (1 + cos(4 * alpha))) * (cos(2 * alpha) / (1 + cos(2 * alpha)));
+    z2 = 1/s1;
+    printf("%f\n", z1);
+    printf("%f", z2);
+    return 0;
 }
