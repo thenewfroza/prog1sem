@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+	char a[10];
+	gets_s(a);
+	puts(a);
+
+	float b;
+	scanf("%f", &b);
+	printf("%f", b);
+	printf("%g", b);
+	return 0;
+
+}
