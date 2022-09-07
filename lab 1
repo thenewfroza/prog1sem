@@ -1,14 +1,29 @@
 #include <stdio.h>
+
 int main()
 {
-	char a[10];
-	gets_s(a);
-	puts(a);
+    char a[10];
+    puts("Enter first string");
+    gets(a); // функция gets завершает работу только тогда, когда пользователь нажимает клавишу ввод. Это чревато тем, что мы можем выйти за рамки массива, в нашем случае — если введено более 20 символов.
+    printf("yor first string is");
+    printf("\n");
+    puts(a);
 
-	float b;
-	scanf("%f", &b);
-	printf("%f", b);
-	printf("%g", b);
-	return 0;
+
+
+    char a1[10];
+    puts("Enter second string");
+    fgets(a1,10,stdin);
+    fflush(stdin);
+    printf("yor second string is: %s", a1);
+    printf("\n");
+
+
+    float b;
+    printf("print your float number");
+    scanf("%f", &b);
+    printf("%f", b);
+
+    return 0;
 
 }
